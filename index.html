@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- 
+            E-Portfolio
+            Author: Simeon Iyoha
+            Date: 23 October, 2023
+            Description: This is Simeon Iyoha's portfolio.
+        -->
+
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Portfolio, Developer, Halifax, Global">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simeon Iyoha</title>
+
+        <link rel="stylesheet" type="text/css" href="/main.css" >
+        <!-- <link href="/css/layout.css" rel="stylesheet"> -->
+        <link href="/css/reset.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header-section">
+            <a href="#"><img src="/img/logo/white.svg" class="logo" alt="simeon-iyoha-logo"></a>
+            <nav class="headernav">
+                <ul class="navlist" data-visible="false">
+                    <li class="listItem"><a href="#home-section">HOME</a></li>
+                    <li class="listItem"><a href="#about-section">ABOUT</a></li>
+                    <li class="listItem"><a href="#experience-section">HISTORY</a></li>
+                    <li class="listItem"><a href="#contact-section">CONTACT</a></li>
+                </ul>
+                <div class="header-icons">
+                    <a href="https://www.linkedin.com/in/simeon-iyoha-49990a145/" target="new"><img src="/icons/linked_in.svg"  class="linkedin-icon" alt="linkedin-icon"></a>
+                    <div class="blob white">
+                        <a href="#spot">
+                            <img src="/icons/spotify_1.svg" class="spotify-icon" alt="spotify_icon">
+                        </a>
+                    </div>
+                    <a class="navicon" aria-controls="navlist" href="#0"><img src="/icons/menu.svg" alt="navigation menu"> </a>
+                </div>
+            </nav>
+        </header>
+
+        <div id="home-section">
+            <section class="homecopy">
+                <h2>
+                    <span class="where-text">WHERE</span><br>
+                    <span class="design-text scroll-element js-scroll slide-bottom delay-1">design</span> 
+                    <span class="meets-text">MEETS</span> 
+                    <span class="code-text scroll-element js-scroll slide-bottom delay-2">&lt;functionality&gt;</span>
+                </h2>
+                <p>Hi. I'm Simeon, a Product Designer and Full Stack Developer.</p>
+                <!-- <div class="scroll-icon">
+                    <a href="#about-section"><img src="/img/scroll.svg" alt="scroll-img"></a>
+                </div> -->
+                
+                <a href="#about-section"><div class="scroll-container">
+                    <div class="text-circle">
+                        <h5 id="scroll-text">   SCROLL  &#8226;  SCROLL  &#8226;  SCROLL  &#8226;  SCROLL  &#8226;  SCROLL  &#8226;  </h5>
+                        <img src="/icons/arrow-right.svg" alt="scroll-img" class="arrow-down-img">
+                    </div>
+                </div></a>
+            </section>
+        </div>
+
+        <section id="about-section">
+            <div class="scroll-element js-scroll slide-left">
+                <h5 class="text-reveal">ABOUT ME</h5>
+                <p>Over the past 7 years, I've successfully led the launch of multiple digital products across various industries including I.T., fintech, healthcare, consulting, and marketing. <br><br>I believe in creating not just visually stunning websites but functional ones. The true magic happens when design and development shake hands. I also love meeting new people and good food!</p>
+            </div>
+
+            <div class="wrapper abt-img scroll-element js-scroll slide-right">
+                <img src="./img/hero-img-empty-2.png" alt="">
+                <!-- <div class="icon-set"> -->
+                    <!-- <p class="text">Quality&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;Quality&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;
+                    </p> -->
+                    <img class="img-1 effex" src="./icons/star1.svg" alt="">
+                    <img class="img-2 effex" src="./icons/star2.svg" alt="">
+                    <img class="img-3 effex" src="./icons/Thunder.svg" alt="">
+                    <img class="img-4 effex" src="./icons/stamp.svg" alt="">
+                <!-- </div> -->
+            </div>
+
+
+            <!-- <img src="/img/hero-img-2.png" alt="about-image" class="abt-img scroll-element js-scroll slide-right"> -->
+            <p class="scroll-element js-scroll slide-bottom">As a full-stack developer, I am passionate about bridging the gap between product and technology. My diverse background in Product Design allows me to create seamless experiences that harmonize user needs with technological capabilities. I thrive in collaborative environments and I'm dedicated to delivering innovative solutions that exceed expectations.</p>
+        </section>
+
+        <section class="skills-section">
+            <h5>SKILLS</h5>
+            <div class="all-skills">
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-1">
+                    <aside>
+                        <img src="/img/logo/html_5.svg" alt="html-5-logo">
+                        <h3>HTML</h3>
+                    </aside>
+                    <p>Proficient in structuring web content, ensuring information is organized and accessible, forming the foundation of web development.
+                    </p>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-2">
+                    <aside>
+                        <img src="/img/logo/css_3.svg" alt="html-5-logo">
+                        <h3>CSS</h3>
+                    </aside>
+                    <p>Skilled in enhancing the visual appeal and layout of web applications, creating responsive and pleasing UI in alignment with modern design principles.
+                    </p>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-3">
+                    <aside>
+                        <img src="/img/logo/js.svg" alt="html-5-logo">
+                        <h3>JAVASCRIPT</h3>
+                    </aside>
+                    <p>Experienced in using JavaScript to add interactivity and dynamic functionality to websites, improving UX through client-server scripting.
+                    </p>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-4">
+                    <aside>
+                        <img src="/img/logo/react.svg" alt="html-5-logo">
+                        <h3>REACT</h3>
+                    </aside>
+                    <p>Competent in building dynamic and efficient web applications using the React library with reusable UI components for an improved user interface.
+                    </p>
+                </div>
+            </div>
+            <div class="all-skills backend">
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-1">
+                    <aside>
+                        <img src="/icons/nodejs.svg" alt="html-5-logo">
+                        <h3>NODE JS</h3>
+                    </aside>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-2">
+                    <aside>
+                        <img src="/icons/express.svg" alt="html-5-logo">
+                        <h3>EXPRESS JS</h3>
+                    </aside>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-3">
+                    <aside>
+                        <img src="/icons/mongo.svg" alt="html-5-logo">
+                        <h3>MONGO DB</h3>
+                    </aside>
+                </div>
+                <div class="skills-grid scroll-element js-scroll slide-bottom delay-4">
+                    <aside>
+                        <img src="/icons/sql.svg" alt="html-5-logo">
+                        <h3>SQL</h3>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h5>FEATURED PROJECTS</h5>
+            <div class="all-projects">
+
+                <a href="https://phaser-game-2.netlify.app/" target="new">
+                    <div class="project1 img-wrapper hov-img-scale scroll-element js-scroll slide-bottom delay-1">
+                        <aside class="img-container">
+                            <img src="/img/phaser.png" class="img-hover-item" alt="acme-img">
+                        </aside>
+                        <h3>PHASER 2</h3>
+                        <!-- <p>Single page application website</p> -->
+                        <p>Game Dev</p>
+                    </div>
+                </a>
+            
+                <a href="https://bus-api-leaflet.netlify.app/" target="new">
+                <!-- <div class="project1">
+                    <aside>
+                        <img src="/img/leaflet.png" alt="acme-img">
+                    </aside>
+                    <h3>LEAFLET BUS API</h3> -->
+                    <!-- <p>API showing available buses in HRM</p> -->
+                    <!-- <p>API</p>
+                </div> -->
+                    <div class="project1 img-wrapper hov-img-scale scroll-element js-scroll slide-bottom delay-2">
+                        <aside class="img-container">
+                            <img src="/img/leaflet.png" class="img-hover-item" alt="acme-img">
+                        </aside>
+                        <h3>LEAFLET BUS API</h3>
+                        <!-- <p>API showing available buses in HRM</p> -->
+                        <p>API</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/s1m3on/Chinook-Database" target="new">
+                <div class="project1 img-wrapper hov-img-scale scroll-element js-scroll slide-bottom delay-3">
+                    <aside class="img-container">
+                        <img src="/img/chinook.png" class="img-hover-item" alt="acme-img">
+                    </aside>
+                    <h3>CHINOOK DATABASE</h3>
+                    <p>Backend</p>
+                </div>
+                </a>
+            </div>
+        </section>
+        
+        <section id="experience-section">
+            <div class="marquee">
+                <ul class="marquee__content">
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                </ul>
+            
+                <ul aria-hidden="true" class="marquee__content">
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                    <li>EDUCATION</li>
+                    <li>✦</li>
+                    <li>EXPERIENCE</li>
+                    <li>✦</li>
+                </ul>
+            </div>    
+            
+            <div class="exp-grid">
+                <h5>EXPERIENCE</h5>
+                <div class="exp-grid-1">
+                    2021 - 2023
+                    <h2>ARM HOLDCO</h2>
+                    <h3>PRODUCT DESIGNER</h3>
+                </div>
+                <div class="exp-grid-1">
+                    2021 - 2022
+                    <h2>BLUSALT FINANCIAL SERVICES LIMITED</h2>
+                    <h3>LEAD PRODUCT DESIGNER</h3>
+                </div>
+                <div class="exp-grid-1">
+                    2020
+                    <h2>UNITED BANK FOR <br>AFRICA (UBA)</h2>
+                    <h3>PRODUCT DESIGNER (UI/UX)</h3>
+                </div>
+
+                <div class="exp-grid-1">
+                    2019 - 2021
+                    <h2>LIFEBANK</h2>
+                    <h3>UI/UX DESIGNER</h3>
+                </div>
+                <div class="exp-grid-1">
+                    2017 - 2019
+                    <h2>DOCULAND</h2>
+                    <h3>BRAND & VISUAL DESIGNER</h3>
+                </div>
+            </div>
+
+            <div class="exp-grid">
+                <h5>EDUCATION</h5>
+                <div class="exp-grid-1">
+                    2023
+                    <h2>NSCC</h2>
+                    <h3>FULL STACK APP. DEVELOPMENT</h3>
+                </div>
+                <div class="exp-grid-1">
+                    2019
+                    <h2>STUTERN</h2>
+                    <h3>UI & UX DESIGN</h3>
+                </div>
+                <div class="exp-grid-1">
+                    2013
+                    <h2>UNIVERSITY OF LAGOS</h2>
+                    <h3>SOCIAL WORK (SDA)</h3>
+                </div>
+            </div>
+            <div class="btn-container"><a href="https://www.linkedin.com/in/simeon-iyoha-49990a145/" target="new" id="lkdin-btn">LINKEDIN</a></div>
+        </section>  
+
+        <section id="contact-section">
+            <div class="marquee-2">
+                <ul class="marquee__content-2">
+                    <li>GET IN TOUCH</li>
+                    <li>✦</li>
+                    <li>CONTACT</li>
+                    <li>✦</li>
+                    <li>INQUIRIES</li>
+                    <li>✦</li>
+                    <li>PROJECTS</li>
+                    <li>✦</li>
+                    <li>QUESTIONS</li>
+                    <li>✦</li>
+                    <li>COMPLIMENTS</li>
+                    <li>✦</li>
+                    <li>IDEAS</li>
+                    <li>✦</li>
+                    <li>LETTERS</li>
+                    <li>✦</li>
+                    <li>CONNECT</li>
+                    <li>✦</li>
+                </ul>
+            
+                <ul aria-hidden="true" class="marquee__content-2">
+                    <li>GET IN TOUCH</li>
+                    <li>✦</li>
+                    <li>CONTACT</li>
+                    <li>✦</li>
+                    <li>INQUIRIES</li>
+                    <li>✦</li>
+                    <li>PROJECTS</li>
+                    <li>✦</li>
+                    <li>QUESTIONS</li>
+                    <li>✦</li>
+                    <li>COMPLIMENTS</li>
+                    <li>✦</li>
+                    <li>IDEAS</li>
+                    <li>✦</li>
+                    <li>LETTERS</li>
+                    <li>✦</li>
+                    <li>CONNECT</li>
+                    <li>✦</li>
+                </ul>
+            </div>  
+            <div class="contact-map">
+                <div class="contact-info">
+                    <h5>GET IN TOUCH</h5>
+                    <form>
+                        <input name="name" type="text" class="feedback-input" placeholder="Name">
+                        <input name="email" type="text" class="feedback-input" placeholder="Email">
+                        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                        <input type="submit" value="SEND">
+                    </form>
+                    <div class="soc-med">
+                        <a href="mailto:simeon.iyoha@yahoo.com?subject=Enquiry"><img src="/icons/mail.svg" alt="mail-icon"></a>
+                        <a href="https://www.behance.net/sim3oniyoha" target="new"><img src="/icons/behance.svg"
+                            alt="behance-icon"></a>
+                            <a href="https://github.com/s1m3on" target="new"><img src="/icons/github.svg" alt="github"
+                                class="github"></a>
+                    </div>
+                </div>
+
+                <div id="spot" class="iframe-div">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/4OF9CylxIZn0Y6ITzw8l1E?utm_source=generator&theme=0" 
+                        width="100%"
+                        height="500" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- <div class="map-graph"> -->
+                
+            <!-- </div> -->
+        </section>
+
+        <footer>
+            <h5>Made with <img src="/icons/solar_heart-bold.svg" alt="love"> in Halifax</h5>
+            <!-- <p>Made with <img> &amp; <img> in Halifax</p> -->
+        </footer>
+    </body>
+</html>

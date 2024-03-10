@@ -1,0 +1,55 @@
+/*mixin definitions*/
+@mixin big-headers-web-1($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 900;
+    font-size: 8em;
+    line-height: .9em;
+    -webkit-text-stroke: 4px $secondary-color;
+}
+
+@mixin small-headers-web-1($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: .5em;
+    color: $alternative-color-6;
+}
+
+@mixin small-headers-web-2($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 900;
+    font-size: 2.2em;
+    line-height: .9em;
+    -webkit-text-stroke: 1px $secondary-color;
+}
+
+@mixin small-headers-web-3($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 900;
+    font-size: 2.2em;
+    line-height: .9em;
+    -webkit-text-stroke: 1px $primary-color;
+}
+
+@mixin small-headers-web-4($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: .5em;
+    color: $alternative-color-6;
+}
+
+@mixin small-headers-web-5($family: 'IBM Plex Sans Condensed') {
+    font-family: $family;
+    font-weight: 400;
+    font-size: .85em;
+    line-height: .5em;
+    color: $alternative-color-6;
+}
+
+@mixin paragraph-web-1($family: 'IBM Plex Mono') {
+    color: $secondary-color;
+    font-size: 28px;
+    line-height: 1.4em;
+    font-family: $family;
+}

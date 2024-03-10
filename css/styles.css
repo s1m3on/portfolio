@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url(/css/layout.css);
+
+/* 
+
+   E-Portfolio
+   Author: Simeon Iyoha
+   Date: 23 October, 2023
+   Description: This is Simeon Iyoha's portfolio.
+
+ */
+
+/* html{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+body{
+    background-color: #181818;
+    color: white;
+    
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.4em;
+} */
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src:url('/fonts/WhyteInktrap-Bold.woff') format('woff'),
+        url('/fonts/WhyteInktrap-Bold.woff2') format('woff2');
+    /* font-weight:; */
+    font-style: normal;
+}
+
+h1,h2,h3{
+    /* font-family: paralucentcondensed, sans-serif;
+    font-style: normal; */
+    font-weight: 900;
+    font-size: 8em;
+    line-height: .9em;
+    -webkit-text-stroke: 4px #ffffff;
+}
+
+h4,h5{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: .5em;
+    color: rgba(255, 255, 255, 0.501);
+    /* -webkit-text-stroke: 0px #ffffff; */
+}
+
+body header{
+    background-color: #0A0A0A;
+}
+
+.homecopy h2 > .design-text{
+    font-family: 'Whyte Inktrap', monospace;
+    font-weight: 300;
+    -webkit-text-stroke: 0px #ffffff;
+}
+
+.homecopy h2 > .code-text{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    font-size: .7em;
+    -webkit-text-stroke: 3px #ffffff;
+}
+
+.homecopy h2 > .design-text:hover{
+    color: #aa33f4;
+    -webkit-text-stroke: 0px #ffffff;
+}
+
+.homecopy h2 > .code-text:hover{
+    color: #09a86b;
+    -webkit-text-stroke: 3px #09a86b;
+}
+
+.skills-grid p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.skills-grid aside > h3{
+    font-weight: 900;
+    font-size: 2.2em;
+    line-height: .9em;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.all-projects .project1:nth-of-type(2){
+    background-color: #c6e379;
+}
+
+.all-projects .project1:nth-of-type(3){
+    background-color: #2edeca;
+}
+
+.project1{
+    color: #0A0A0A;
+    font-weight: 600;
+}
+
+.project1 p{
+    font-size: 18px;
+    padding-top: 10px;
+    color:#0A0A0A;
+}
+
+.project1 h3{
+    font-weight: 900;
+    font-size: 2.2em;
+    line-height: .9em;
+    -webkit-text-stroke: 1px #0A0A0A;
+}
+
+.marquee {
+    background-color: #bbe611;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color:#0A0A0A;
+    font-weight: 800;
+    font-size: 1.2em;
+    /* line-height: .9em; */
+    -webkit-text-stroke: 0px #0A0A0A;
+}
+
+.marquee-2 {
+    background-color: #1171e6;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    font-weight: 800;
+    font-size: 1.2em;
+    /* line-height: .9em; */
+    -webkit-text-stroke: 0px #ffffff;
+}
+
+#experience-section{
+    background-color: #ffffff;
+}
+
+.exp-grid{
+    padding: 50px 100px;
+}
+
+.exp-grid h5{
+    padding-bottom: 50px;
+    color: rgba(0, 0, 0, 0.501);
+    font-weight: 500;
+}
