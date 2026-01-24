@@ -24,7 +24,7 @@ h3 {
   font-weight: 900;
   font-size: 8em;
   line-height: 0.9em;
-  -webkit-text-stroke: 4px #ffffff;
+  -webkit-text-stroke: 4px #f7f9f2;
 }
 
 h4,
@@ -63,7 +63,7 @@ body header {
 .homecopy h2 .design-text {
   font-family: "Whyte Inktrap", monospace;
   font-weight: 300;
-  -webkit-text-stroke: 0px #ffffff;
+  -webkit-text-stroke: 0px #f7f9f2;
 }
 
 .homecopy h2 .scrolled.slide-bottom {
@@ -90,7 +90,7 @@ body header {
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
   font-size: 0.7em;
-  -webkit-text-stroke: 3px #ffffff;
+  -webkit-text-stroke: 3px #f7f9f2;
 }
 
 .homecopy h2 .scrolled.slide-bottom {
@@ -115,7 +115,7 @@ body header {
 
 .homecopy h2 .design-text:hover {
   color: #b5ec48;
-  -webkit-text-stroke: 0px #ffffff;
+  -webkit-text-stroke: 0px #f7f9f2;
 }
 
 .homecopy h2 .code-text:hover {
@@ -145,7 +145,7 @@ body header {
   font-weight: 900;
   font-size: 2.2em;
   line-height: 0.9em;
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 1px #f7f9f2;
 }
 
 .all-projects .project1:nth-of-type(2) {
@@ -201,7 +201,7 @@ body header {
 }
 
 #experience-section {
-  background-color: #ffffff;
+  background-color: #f7f9f2;
 }
 
 .exp-grid {
@@ -351,8 +351,8 @@ body header {
 }
 
 p {
-  color: #ffffff;
-  font-size: 28px;
+  color: #f7f9f2;
+  font-size: 18px;
   line-height: 1.4em;
   font-family: "IBM Plex Mono";
 }
@@ -438,8 +438,8 @@ a.navicon {
 
 .homecopy p {
   /* margin-top: 5px; */
-  font-size: 26px;
-  padding-top: 10px;
+  font-size: 20px;
+  padding: 10px 100px 0px;
 }
 
 #scroll-text {
@@ -485,6 +485,7 @@ a.navicon {
   text-align: center;
   grid-column: 1/span 2;
   padding-top: 90px;
+  
 }
 
 #about-section h5 {
@@ -598,10 +599,18 @@ a.navicon {
 }
 
 .project-tab {
-  display: flex;
-  gap: 40px;
-  padding: 30px 0;
+  --indicator-size: 6px;
+  --indicator-color: #111827;
+  --inactive-color: #9ca3af;
+  --active-color: #111827;
+
+  position: relative;
+  display: inline-flex;
+  gap: 2.5rem;
+  padding-bottom: 1.25rem;
 }
+
+
 
 .project-tab h5 {
   cursor: pointer;

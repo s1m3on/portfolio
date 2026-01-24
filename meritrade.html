@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+            E-Portfolio
+            Author: Simeon Iyoha
+            Date: 23 October, 2023
+            Description: This is Simeon Iyoha's portfolio.
+        -->
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Portfolio, Developer, Halifax, Global" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simeon Iyoha</title>
+
+    <!-- <link href="/css/layout.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="tabs.js" defer></script>
+  </head>
+
+  <body>
+        <header class="header-section">
+      <a href="index.html"
+        ><img src="./img/logo/white.svg" class="logo" alt="simeon-iyoha-logo"
+      /></a>
+      <nav class="headernav">
+        <ul class="navlist" data-visible="false">
+          <li class="listItem"><a href="index.html#home-section">HOME</a></li>
+          <li class="listItem"><a href="index.html#about-section">ABOUT</a></li>
+          <li class="listItem">
+            <a href="index.html#experience-section">HISTORY</a>
+          </li>
+          <li class="listItem">
+            <a href="index.html#contact-section">CONTACT</a>
+          </li>
+        </ul>
+      <div class="header-icons">
+        <a
+          href="https://www.linkedin.com/in/simeon-iyoha-49990a145/"
+          target="new"
+          ><img
+            src="./icons/linked_in.svg"
+            class="linkedin-icon"
+            alt="linkedin-icon"
+        /></a>
+        <div class="blob white">
+          <a href="#spot">
+            <img
+              src="./icons/spotify_1.svg"
+              class="spotify-icon"
+              alt="spotify_icon"
+            />
+          </a>
+        </div>
+        <a class="navicon" aria-controls="navlist" href="#0"
+          ><img src="./icons/menu.svg" alt="navigation menu" />
+        </a>
+      </div>
+      </nav>
+    </header>
+
+    <div id="home-section" class="arm-page">
+      <section class="hero">
+        <div class="parts">
+          <h3>Meritrade - NGX Trading Platform</h3>
+          <p>
+            Meritrade is a digital trading platform designed around the Nigerian
+            Stock Exchange (NGX), enabling users to buy and sell stocks,
+            commodities, and bonds through a streamlined mobile experience.
+            The platform integrates a secure digital wallet for funding and
+            settlement, a comprehensive portfolio dashboard for monitoring
+            investments, and market analysis tools that surface actionable
+            insights. Built on Meristem's long-standing credibility in financial
+            services, Meritrade modernizes stock trading while preserving the
+            trust expected from a well-established institution.
+          </p>
+        </div>
+        <div class="parts parts-img-container">
+          <img src="./img/ARM-logo.png" class="parts-img" alt="" />
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>The Challenge</h3>
+
+          <p>
+            While Meristem had strong brand recognition and investor trust, its
+            digital trading experience faced several usability and engagement
+            challenges:<br><br>
+            - High friction onboarding, slowing time to first trade<br>
+            - Complex trading interfaces that overwhelmed non-professional investors<br>
+            - Limited personalization, requiring users to manually track market movements<br>
+            - Underutilized portfolio insights, reducing long-term engagement<br>
+            - Accessibility gaps for an older demographic<br><br>
+            The platform needed to appeal to a broad audience -- from experienced
+            traders to first-time investors -- without compromising clarity,
+            confidence, or performance.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>Project Goals</h3>
+
+          <p>
+            The objective was to design a trading platform that:<br><br>
+            - Simplified access to NGX trading for all experience levels<br>
+            - Reduced onboarding time and accelerated first engagement<br>
+            - Enabled informed decision-making through market insights and analysis<br>
+            - Built trust through clarity, tone, and visual consistency<br>
+            - Increased trading frequency via timely, personalized engagement<br>
+            - Delivered an accessible experience for users aged 35-65<br><br>
+            The product needed to feel professional, dependable, and intuitive --
+            not intimidating.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>UX Strategy &amp; Design Rationale</h3>
+
+          <p>
+            1. Designing for Trust and Accessibility<br>
+            With a core demographic of users aged 35-65, accessibility was
+            foundational to every design decision. We focused on:<br><br>
+            - Clean layouts with clear separation of content<br>
+            - Refined, legible typography<br>
+            - High-contrast color usage<br>
+            - Predictable navigation patterns<br><br>
+            These choices reduced cognitive load while reinforcing Meristem's
+            credibility.<br><br>
+
+            2. Streamlined Onboarding for Faster Activation<br>
+            User research revealed that lengthy onboarding flows were a primary
+            drop-off point. To address this, we:<br><br>
+            - Simplified identity verification steps<br>
+            - Introduced progressive disclosure<br>
+            - Provided contextual guidance during setup<br>
+            - Reduced the path to first trade<br><br>
+            The result was a significantly faster time to first meaningful action.<br><br>
+
+            3. Portfolio Dashboard as a Central Command Center<br>
+            The portfolio view was redesigned to surface what matters most:<br><br>
+            - Current holdings<br>
+            - Asset allocation<br>
+            - Real-time performance<br>
+            - Gains and losses over time<br><br>
+            By prioritizing clarity over complexity, users could quickly understand
+            their financial position without navigating multiple screens.<br><br>
+
+            4. Market Trend Analysis for Informed Trading<br>
+            To support confident decision-making, Meritrade integrates market trend
+            tools that:<br><br>
+            - Highlight price movements<br>
+            - Surface volume changes<br>
+            - Provide contextual market signals<br><br>
+            These insights are presented in a simplified, visual format -- designed
+            to inform, not overwhelm.<br><br>
+
+            5. Personalized Trade Recommendations &amp; Alerts<br>
+            User research identified a strong demand for proactive engagement. We
+            introduced:<br><br>
+            - Personalized trade suggestions based on user behavior<br>
+            - User-defined push notifications for price changes, market movements,
+              and reminders<br>
+            - Alerts aligned with individual portfolio interests<br><br>
+            This feature bridged the gap between passive monitoring and active
+            trading.<br><br>
+
+            6. Integrated Digital Wallet for Seamless Transactions<br>
+            Meritrade's built-in wallet enables users to:<br><br>
+            - Fund accounts securely<br>
+            - Execute trades without friction<br>
+            - Track transaction history transparently<br><br>
+            By eliminating external dependencies, the platform creates a cohesive
+            trading flow from funding to execution.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>Design Methodology</h3>
+
+          <p>
+            Discovery &amp; Research<br>
+            - User interviews across multiple age groups<br>
+            - Behavioral analysis of trading patterns<br>
+            - Competitive benchmarking against local and global trading platforms<br><br>
+            Experience Architecture<br>
+            - Simplified information hierarchy<br>
+            - Clear separation between trading, portfolio, and analysis<br>
+            - Reduced steps across critical flows<br><br>
+            Interface Design<br>
+            - Brand-aligned visual language<br>
+            - Accessible typography and spacing<br>
+            - Consistent tone of voice to reinforce trust<br><br>
+            Validation<br>
+            - Usability testing on onboarding and trade execution<br>
+            - Iterative refinement of alerts and dashboards<br>
+            - Feedback-driven UI improvements<br><br>
+            Design decisions were consistently validated against real user behavior.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>Solution</h3>
+
+          <p>
+            Meritrade delivers a refined trading experience through:<br><br>
+            - Intuitive NGX stock, bond, and commodity trading<br>
+            - Secure digital wallet integration<br>
+            - Clear, actionable portfolio dashboards<br>
+            - Simplified onboarding and account setup<br>
+            - Personalized trade recommendations and push notifications<br>
+            - Market trend analysis tailored to user interests<br><br>
+            The platform balances professional-grade capability with everyday usability.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>Impact</h3>
+
+          <p>
+            User Impact<br>
+            - Faster onboarding and reduced friction<br>
+            - Improved clarity around investment performance<br>
+            - Increased confidence in trading decisions<br>
+            - More consistent engagement through timely alerts<br><br>
+            Business Impact<br>
+            - Increased trading activity driven by personalized notifications<br>
+            - Stronger user retention across age demographics<br>
+            - Reinforced digital trust in the Meristem brand<br>
+            - Higher platform adoption among new investors<br><br>
+            Meritrade successfully bridges traditional financial credibility with
+            modern digital trading expectations.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+        <div class="info-text">
+          <h3>Conclusion</h3>
+
+          <p>
+            Meritrade demonstrates how thoughtful UX design can transform stock
+            trading from a complex task into a confident, accessible experience.
+            By aligning user needs, brand trust, and market realities, the platform
+            empowers investors to engage more actively -- while strengthening
+            Meristem's position in Nigeria's digital trading ecosystem.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <h5>
+        Copyright ©️ 2026
+      </h5>
+    </footer>
+  </body>
+</html>
