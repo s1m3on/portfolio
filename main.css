@@ -45,6 +45,40 @@ body header {
   z-index: 2;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* padding: 0 0 0 24px; */
+  width: 100%;
+  text-align: left;
+  z-index: 3;
+
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin-left: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  z-index: 3;
+  color: #f7f9f2;
+}
+
+.back-button img {
+  width: 22px;
+  height: 22px;
+  transform: rotate(90deg);
+  display: block;
+}
+
 .homecopy p {
   animation-name: hero;
   animation-duration: 1s;
@@ -197,7 +231,7 @@ body header {
   font-weight: 800;
   font-size: 1.2em;
   /* line-height: .9em; */
-  -webkit-text-stroke: 0px #ffffff;
+  -webkit-text-stroke: 0px #f7f9f2;
 }
 
 #experience-section {
@@ -335,7 +369,7 @@ html {
 
 body {
   background-color: #0A0A0A;
-  color: white;
+  color: #f7f9f2;
   /* padding: 0 100px; */
   margin: 0;
 }
@@ -418,12 +452,12 @@ p {
 
 .navlist li a {
   text-decoration: none;
-  color: white;
+  color: #f7f9f2;
 }
 
 .navlist li a:hover {
   text-decoration: none;
-  color: white;
+  color: #f7f9f2;
 }
 
 a.navicon {
@@ -434,6 +468,15 @@ a.navicon {
   padding: 130px 0 200px 0;
   /* background-color: rgba(206, 206, 211, 0.029); */
   text-align: center;
+}
+
+#home-section h3{
+  font-weight: 900;
+  font-size: 3.2em;
+  text-align: left;
+  line-height: 1em;
+  color: #f7f9f2;
+  -webkit-text-stroke: 1px #f7f9f2;
 }
 
 .homecopy p {
@@ -602,7 +645,7 @@ a.navicon {
   --indicator-size: 6px;
   --indicator-color: #111827;
   --inactive-color: #9ca3af;
-  --active-color: #111827;
+  --active-color: #f7f9f2;
 
   position: relative;
   display: inline-flex;
@@ -695,20 +738,22 @@ a.navicon {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 100px;
+  padding: 0 100px 150px 100px;
 }
 
 .info-img {
-  /* width: 100%;
-  height: auto; */
+  width: 100%;
+  height: auto;
 
-  width: 1521px;
-  height: 1009px;
+  /* width: 1521px;
+  height: 1009px; */
 }
 
 .info-text {
-  display: flex;
+  display: grid;
+  gap: 7em;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
 }
 
 .info-text>h2 {
@@ -716,9 +761,18 @@ a.navicon {
   width: 25%;
 }
 
+.info-text>h3 {
+  font-weight: 900;
+  font-size: 3.2em;
+  text-align: left;
+  line-height: 1em;
+  color: #f7f9f2;
+  -webkit-text-stroke: 1px #f7f9f2;
+}
+
 .info-text>p {
   font-size: 18px;
-  width: 45%;
+  width: 100%;
   text-align: left;
 }
 
@@ -749,6 +803,8 @@ a.navicon {
   justify-content: center;
   padding: 13px 13px 0 13px;
   padding-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .project1 img {
@@ -761,6 +817,7 @@ a.navicon {
   position: relative;
   overflow: hidden;
   height: 100%;
+  border-radius: 15px;
 }
 
 .img-wrapper:hover {
@@ -770,12 +827,14 @@ a.navicon {
 .img-container {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .img-hover-item {
   position: relative;
   display: block;
   width: 100%;
+  border-radius: 15px;
   transform: scale(1.02);
   transition: 0.25s 0.1s ease-out;
 }
@@ -871,10 +930,11 @@ a.navicon {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 800;
   font-size: 1.4em;
-  -webkit-text-stroke: 0.5px #ffffff;
+  -webkit-text-stroke: 0.5px #f7f9f2;
   background-color: #0A0A0A;
   color: white;
   text-decoration: none;
+  border-radius: 15px;
 }
 
 #lkdin-btn:hover {
@@ -949,10 +1009,10 @@ a.navicon {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-size: 18px;
-  /* border-radius: 5px; */
+  border-radius: 15px;
   line-height: 22px;
   background-color: transparent;
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid #f7f9f2;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -962,13 +1022,14 @@ a.navicon {
 }
 
 .feedback-input:focus {
-  border: 2px solid #ffffff;
+  border: 2px solid #f7f9f2;
 }
 
 textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
+  border-radius: 15px;
 }
 
 [type=submit] {
@@ -977,8 +1038,8 @@ textarea {
   font-size: 1.4em;
   -webkit-text-stroke: 0.5px #0A0A0A;
   width: 100%;
-  background-color: #ffffff;
-  /* border-radius:5px; */
+  background-color: #f7f9f2;
+  border-radius: 15px;
   border: 0;
   cursor: pointer;
   color: #0A0A0A;
@@ -988,10 +1049,10 @@ textarea {
 }
 
 [type=submit]:hover {
-  box-shadow: 0 0 0 3px #ffffff inset;
+  box-shadow: 0 0 0 3px #f7f9f2 inset;
   background-color: #0A0A0A;
-  color: #ffffff;
-  -webkit-text-stroke: 0.4px #ffffff;
+  color: #f7f9f2;
+  -webkit-text-stroke: 0.4px #f7f9f2;
 }
 
 .contact-info {
@@ -1033,7 +1094,7 @@ footer {
 footer>h5 {
   text-align: center;
   padding: 40px 0;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #f7f9f2;
 }
 
 /*--------------------------------mobile only styles-----------------------------*/
@@ -1118,7 +1179,7 @@ footer>h5 {
     font-weight: 900;
     font-size: 4.7em;
     line-height: 0.5em;
-    -webkit-text-stroke: 2px #ffffff;
+    -webkit-text-stroke: 2px #f7f9f2;
   }
 
   h4,
@@ -1164,7 +1225,7 @@ footer>h5 {
     font-weight: 300;
     font-size: 0.8em;
     padding: 10px 0px;
-    -webkit-text-stroke: 0px #ffffff;
+    -webkit-text-stroke: 0px #f7f9f2;
     display: inline-block;
   }
 
@@ -1172,19 +1233,19 @@ footer>h5 {
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
     font-size: 0.43em;
-    -webkit-text-stroke: 1.3px #ffffff;
+    -webkit-text-stroke: 1.3px #f7f9f2;
     display: block;
     padding-top: -12px;
   }
 
   .homecopy h2 .design-text:hover {
-    color: #ffffff;
-    -webkit-text-stroke: 0px #ffffff;
+    color: #f7f9f2;
+    -webkit-text-stroke: 0px #f7f9f2;
   }
 
   .homecopy h2 .code-text:hover {
-    color: #ffffff;
-    -webkit-text-stroke: 1.5px #ffffff;
+    color: #f7f9f2;
+    -webkit-text-stroke: 1.5px #f7f9f2;
   }
 
   .homecopy p {
@@ -1436,7 +1497,7 @@ footer>h5 {
     /* border-radius: 5px; */
     line-height: 22px;
     background-color: transparent;
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid #f7f9f2;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -1742,7 +1803,7 @@ footer>h5 {
     font-weight: 300;
     font-size: 0.8em;
     padding: 5px 0px;
-    -webkit-text-stroke: 0px #ffffff;
+    -webkit-text-stroke: 0px #f7f9f2;
     display: block;
     line-height: 1.5em;
   }
@@ -1751,7 +1812,7 @@ footer>h5 {
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
     font-size: 0.45em;
-    -webkit-text-stroke: 1.5px #ffffff;
+    -webkit-text-stroke: 1.5px #f7f9f2;
     display: block;
     padding-top: 15px;
     line-height: 1.7em;

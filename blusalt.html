@@ -33,7 +33,16 @@
   </head>
 
   <body>
-        <header class="header-section">
+    <div class="button-container">
+
+      <a class="back-button" href="index.html" aria-label="Back to home">
+
+        <img src="./icons/arrow-right.svg" alt="Back" />
+
+      </a>
+
+    </div>
+<header class="header-section">
       <a href="index.html"
         ><img src="./img/logo/white.svg" class="logo" alt="simeon-iyoha-logo"
       /></a>
@@ -74,8 +83,8 @@
     </header>
 
     <div id="home-section" class="arm-page">
-      <section class="hero">
-        <div class="parts">
+      <section class="info-section">
+        <div class="info-text">
           <h3>Blusalt Client Portal - Financial Oversight at Scale</h3>
           <p>
             A centralized fintech dashboard designed to monitor, manage, and
@@ -92,204 +101,511 @@
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Overview</h3>
 
-          <p>
-            The Blusalt Client Portal is an enterprise financial management
-            platform that enables users to oversee multi-layered customer
-            networks -- including merchants, agents, partners, and service
-            providers. Through a single interface, users can:<br><br>
-            - Track inflows and outflows of wallet transactions<br>
-            - Configure service fees and commissions<br>
-            - Monitor sales performance across services<br>
-            - Manage customer access and roles<br>
-            - Audit platform activity in real time<br><br>
-            The portal acts as the operational nerve center for Blusalt's fintech
-            ecosystem.
-          </p>
+
+        <h3>Overview</h3>
+
+
+        <p>
+
+
+        The Blusalt Client Portal is an enterprise financial management
+
+
+        platform that enables users to oversee multi-layered customer
+
+
+        networks -- including merchants, agents, partners, and service
+
+
+        providers. Through a single interface, users can:<br><br>
+
+
+        - Track inflows and outflows of wallet transactions<br>
+
+
+        - Configure service fees and commissions<br>
+
+
+        - Monitor sales performance across services<br>
+
+
+        - Manage customer access and roles<br>
+
+
+        - Audit platform activity in real time<br><br>
+
+
+        The portal acts as the operational nerve center for Blusalt's fintech
+
+
+        ecosystem.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>The Challenge</h3>
 
-          <p>
-            As Blusalt's platform scaled, so did the complexity of managing
-            diverse customer entities and high transaction volumes. Key
-            challenges included:<br><br>
-            - Fragmented visibility across agents, merchants, and partners<br>
-            - Manual oversight of commissions and service usage<br>
-            - Delayed detection of suspicious or irregular activity<br>
-            - Role complexity, making access management difficult<br>
-            - Data overload, limiting fast decision-making<br><br>
-            The platform required a design system that could simplify complexity
-            without losing depth.
-          </p>
+
+        <h3>The Challenge</h3>
+
+
+        <p>
+
+
+        As Blusalt's platform scaled, so did the complexity of managing
+
+
+        diverse customer entities and high transaction volumes. Key
+
+
+        challenges included:<br><br>
+
+
+        - Fragmented visibility across agents, merchants, and partners<br>
+
+
+        - Manual oversight of commissions and service usage<br>
+
+
+        - Delayed detection of suspicious or irregular activity<br>
+
+
+        - Role complexity, making access management difficult<br>
+
+
+        - Data overload, limiting fast decision-making<br><br>
+
+
+        The platform required a design system that could simplify complexity
+
+
+        without losing depth.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Project Goals</h3>
 
-          <p>
-            The primary goals were to:<br><br>
-            - Deliver real-time financial visibility across the entire customer network<br>
-            - Enable granular control over fees, commissions, and services<br>
-            - Support role-based access and permissions<br>
-            - Surface actionable insights through clear dashboards<br>
-            - Strengthen platform security and trust<br>
-            - Support rapid investigation and response to suspicious activity<br><br>
-            The experience needed to feel authoritative, reliable, and effortless
-            -- even under heavy data usage.
-          </p>
+
+        <h3>Project Goals</h3>
+
+
+        <p>
+
+
+        The primary goals were to:<br><br>
+
+
+        - Deliver real-time financial visibility across the entire customer network<br>
+
+
+        - Enable granular control over fees, commissions, and services<br>
+
+
+        - Support role-based access and permissions<br>
+
+
+        - Surface actionable insights through clear dashboards<br>
+
+
+        - Strengthen platform security and trust<br>
+
+
+        - Support rapid investigation and response to suspicious activity<br><br>
+
+
+        The experience needed to feel authoritative, reliable, and effortless
+
+
+        -- even under heavy data usage.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>UX Strategy &amp; Design Rationale</h3>
 
-          <p>
-            1. Dashboard-First Decision Making<br>
-            Given the volume of transactions processed daily, the dashboard was
-            designed to prioritize at-a-glance clarity. Key considerations:<br><br>
-            - High-level transaction summaries<br>
-            - Clear visual indicators for inflow vs outflow<br>
-            - Sales and service performance metrics<br>
-            - Progressive disclosure for deeper analysis<br><br>
-            This approach allows users to understand platform health within
-            seconds.<br><br>
 
-            2. Structured Network Management<br>
-            Each customer type -- agents, merchants, partners -- was designed as
-            a distinct but consistent module, enabling familiarity without
-            confusion. Agents include profile management, wallet transactions,
-            commissions, and activation controls. Merchants include profile
-            overview, wallet history, and team management with role definitions
-            (Super Admin, Operations, Admin, Customer Service). This structure
-            supports scalability while maintaining clarity.<br><br>
+        <h3>UX Strategy &amp; Design Rationale</h3>
 
-            3. Partner &amp; Service Visibility<br>
-            Partners often operate across multiple services and merchants. The
-            Partner module enables users to view partner profiles and wallet
-            activity, track commissions, see associated merchants, and monitor
-            services such as bill payments, SMS, airtime &amp; data bundles, cable
-            TV, and electricity. This holistic view reduces blind spots and
-            improves accountability.<br><br>
 
-            4. Financial Configuration &amp; Control<br>
-            To support flexible business models, users can set or adjust service
-            fees, define commission structures, and monitor performance impact in
-            real time. This feedback loop empowers informed strategic decisions.<br><br>
+        <p>
 
-            5. Audit, Reporting &amp; Compliance<br>
-            Security and traceability were foundational. Users can access audit
-            trails, login histories, and transaction records to support
-            compliance requirements, fraud detection, and operational reviews.
-            Every action is logged -- reinforcing trust and accountability.<br><br>
 
-            6. Rapid Response to Risk<br>
-            Users can instantly deactivate agents or merchants, restrict access
-            to services, and investigate anomalies through detailed logs. The
-            interface ensures that critical actions are clear, deliberate, and
-            reversible where necessary.
-          </p>
+        1. Dashboard-First Decision Making<br>
+
+
+        Given the volume of transactions processed daily, the dashboard was
+
+
+        designed to prioritize at-a-glance clarity. Key considerations:<br><br>
+
+
+        - High-level transaction summaries<br>
+
+
+        - Clear visual indicators for inflow vs outflow<br>
+
+
+        - Sales and service performance metrics<br>
+
+
+        - Progressive disclosure for deeper analysis<br><br>
+
+
+        This approach allows users to understand platform health within
+
+
+        seconds.<br><br>
+
+
+        2. Structured Network Management<br>
+
+
+        Each customer type -- agents, merchants, partners -- was designed as
+
+
+        a distinct but consistent module, enabling familiarity without
+
+
+        confusion. Agents include profile management, wallet transactions,
+
+
+        commissions, and activation controls. Merchants include profile
+
+
+        overview, wallet history, and team management with role definitions
+
+
+        (Super Admin, Operations, Admin, Customer Service). This structure
+
+
+        supports scalability while maintaining clarity.<br><br>
+
+
+        3. Partner &amp; Service Visibility<br>
+
+
+        Partners often operate across multiple services and merchants. The
+
+
+        Partner module enables users to view partner profiles and wallet
+
+
+        activity, track commissions, see associated merchants, and monitor
+
+
+        services such as bill payments, SMS, airtime &amp; data bundles, cable
+
+
+        TV, and electricity. This holistic view reduces blind spots and
+
+
+        improves accountability.<br><br>
+
+
+        4. Financial Configuration &amp; Control<br>
+
+
+        To support flexible business models, users can set or adjust service
+
+
+        fees, define commission structures, and monitor performance impact in
+
+
+        real time. This feedback loop empowers informed strategic decisions.<br><br>
+
+
+        5. Audit, Reporting &amp; Compliance<br>
+
+
+        Security and traceability were foundational. Users can access audit
+
+
+        trails, login histories, and transaction records to support
+
+
+        compliance requirements, fraud detection, and operational reviews.
+
+
+        Every action is logged -- reinforcing trust and accountability.<br><br>
+
+
+        6. Rapid Response to Risk<br>
+
+
+        Users can instantly deactivate agents or merchants, restrict access
+
+
+        to services, and investigate anomalies through detailed logs. The
+
+
+        interface ensures that critical actions are clear, deliberate, and
+
+
+        reversible where necessary.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Design Methodology</h3>
 
-          <p>
-            Discovery &amp; Research<br>
-            - Stakeholder interviews<br>
-            - Analysis of fintech operational workflows<br>
-            - Benchmarking against enterprise financial dashboards<br><br>
-            Experience Architecture<br>
-            - Role-based access control<br>
-            - Modular information architecture<br>
-            - Clear separation between oversight and configuration tasks<br><br>
-            Interface Design<br>
-            - Data-dense layouts optimized for readability<br>
-            - Consistent visual hierarchy across modules<br>
-            - Clear typography and spacing to reduce cognitive load<br><br>
-            Validation<br>
-            - Usability testing on dashboard comprehension<br>
-            - Iterative refinement of tables and reports
-          </p>
+
+        <h3>Design Methodology</h3>
+
+
+        <p>
+
+
+        Discovery &amp; Research<br>
+
+
+        - Stakeholder interviews<br>
+
+
+        - Analysis of fintech operational workflows<br>
+
+
+        - Benchmarking against enterprise financial dashboards<br><br>
+
+
+        Experience Architecture<br>
+
+
+        - Role-based access control<br>
+
+
+        - Modular information architecture<br>
+
+
+        - Clear separation between oversight and configuration tasks<br><br>
+
+
+        Interface Design<br>
+
+
+        - Data-dense layouts optimized for readability<br>
+
+
+        - Consistent visual hierarchy across modules<br>
+
+
+        - Clear typography and spacing to reduce cognitive load<br><br>
+
+
+        Validation<br>
+
+
+        - Usability testing on dashboard comprehension<br>
+
+
+        - Iterative refinement of tables and reports
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Solution</h3>
 
-          <p>
-            The Blusalt Client Portal delivers a comprehensive oversight system
-            through:<br><br>
-            - Centralized dashboards for transaction monitoring<br>
-            - Agent, merchant, and partner management modules<br>
-            - Role-based access and team structures<br>
-            - Service-level performance tracking<br>
-            - Fee and commission configuration<br>
-            - Robust audit and reporting tools<br><br>
-            All designed to scale alongside Blusalt's growing fintech ecosystem.
-          </p>
+
+        <h3>Solution</h3>
+
+
+        <p>
+
+
+        The Blusalt Client Portal delivers a comprehensive oversight system
+
+
+        through:<br><br>
+
+
+        - Centralized dashboards for transaction monitoring<br>
+
+
+        - Agent, merchant, and partner management modules<br>
+
+
+        - Role-based access and team structures<br>
+
+
+        - Service-level performance tracking<br>
+
+
+        - Fee and commission configuration<br>
+
+
+        - Robust audit and reporting tools<br><br>
+
+
+        All designed to scale alongside Blusalt's growing fintech ecosystem.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Impact</h3>
 
-          <p>
-            User Impact<br>
-            - Faster understanding of platform performance<br>
-            - Reduced operational blind spots<br>
-            - Improved confidence in financial oversight<br>
-            - Efficient response to irregular activity<br><br>
-            Business Impact<br>
-            - Stronger governance across customer networks<br>
-            - Increased trust from partners and merchants<br>
-            - Scalable operations without proportional admin overhead<br>
-            - Clear data foundation for strategic decision-making<br><br>
-            The platform transformed complexity into clarity.
-          </p>
+
+        <h3>Impact</h3>
+
+
+        <p>
+
+
+        User Impact<br>
+
+
+        - Faster understanding of platform performance<br>
+
+
+        - Reduced operational blind spots<br>
+
+
+        - Improved confidence in financial oversight<br>
+
+
+        - Efficient response to irregular activity<br><br>
+
+
+        Business Impact<br>
+
+
+        - Stronger governance across customer networks<br>
+
+
+        - Increased trust from partners and merchants<br>
+
+
+        - Scalable operations without proportional admin overhead<br>
+
+
+        - Clear data foundation for strategic decision-making<br><br>
+
+
+        The platform transformed complexity into clarity.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
 
       <section class="info-section">
-        <img src="./img/macbook.png" class="info-img" alt="" />
+
 
         <div class="info-text">
-          <h3>Conclusion</h3>
 
-          <p>
-            The Blusalt Client Portal demonstrates how thoughtful UX design can
-            bring order to complex financial systems. By prioritizing
-            transparency, control, and security, the platform enables users to
-            manage high-volume financial networks with confidence -- reinforcing
-            Blusalt's position as a trusted fintech infrastructure provider.
-          </p>
+
+        <h3>Conclusion</h3>
+
+
+        <p>
+
+
+        The Blusalt Client Portal demonstrates how thoughtful UX design can
+
+
+        bring order to complex financial systems. By prioritizing
+
+
+        transparency, control, and security, the platform enables users to
+
+
+        manage high-volume financial networks with confidence -- reinforcing
+
+
+        Blusalt's position as a trusted fintech infrastructure provider.
+
+
+        </p>
+
+
         </div>
+
+
+        <img src="./img/macbook.png" class="info-img" alt="" />
+
+
       </section>
     </div>
 
