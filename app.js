@@ -1,15 +1,20 @@
 const text = document.getElementById('scroll-text');
-const rotate = new CircleType(text).radius(50)
 const icons = document.querySelectorAll('.effex');
 
-window.addEventListener('scroll', () => {
-    text.style.transform = 'rotate(' + (window.scrollY * 0.3) + 'deg)'
-})
-window.addEventListener('scroll', () => {
-  icons.forEach(icon => {
-    icon.style.transform = 'rotate(' + (window.scrollY * 0.3) + 'deg)';
+if (text) {
+  new CircleType(text).radius(50);
+  window.addEventListener('scroll', () => {
+    text.style.transform = 'rotate(' + (window.scrollY * 0.3) + 'deg)';
   });
-})
+}
+
+if (icons.length) {
+  window.addEventListener('scroll', () => {
+    icons.forEach(icon => {
+      icon.style.transform = 'rotate(' + (window.scrollY * 0.3) + 'deg)';
+    });
+  });
+}
 
 // Get all elements with the class 'js-scroll'
 const scrollElements = document.querySelectorAll('.js-scroll');
@@ -79,3 +84,90 @@ nav.addEventListener("click", e => {
         navIcon.src = "/icons/menu.svg";
     }
 })
+
+// cursor label
+const cursorLabel = document.querySelector('.cursor-label');
+const cursorText = cursorLabel ? cursorLabel.querySelector('span') : null;
+const header = document.querySelector('header');
+let cursorTargetX = 0;
+let cursorTargetY = 0;
+let cursorCurrentX = 0;
+let cursorCurrentY = 0;
+const cursorOffset = 100;
+let cursorIdleTimer;
+
+const animateCursor = () => {
+  if (cursorLabel) {
+    const isIdle = cursorLabel.classList.contains('is-idle');
+    const scale = isIdle ? 0.1 : 1;
+    cursorCurrentX += (cursorTargetX - cursorCurrentX) * 0.15;
+    cursorCurrentY += (cursorTargetY - cursorCurrentY) * 0.15;
+    cursorLabel.style.transform = `translate3d(${cursorCurrentX - cursorOffset}px, ${cursorCurrentY - cursorOffset}px, 0) scale(${scale})`;
+  }
+  requestAnimationFrame(animateCursor);
+};
+
+if (cursorLabel) {
+  animateCursor();
+
+  document.addEventListener('mousemove', (event) => {
+    const overHeader = header && header.contains(event.target);
+    cursorLabel.classList.toggle('is-hidden', overHeader);
+    if (overHeader) {
+      return;
+    }
+    cursorTargetX = event.clientX;
+    cursorTargetY = event.clientY;
+    cursorLabel.classList.add('is-active');
+    cursorLabel.classList.remove('is-idle');
+    clearTimeout(cursorIdleTimer);
+    cursorIdleTimer = setTimeout(() => {
+      cursorLabel.classList.add('is-idle');
+    }, 2000);
+  });
+
+  document.addEventListener('mouseout', (event) => {
+    if (!event.relatedTarget) {
+      cursorLabel.classList.remove('is-active');
+    }
+  });
+}
+
+const navLinks = document.querySelectorAll('.navlist a[href*="#"]');
+const labelMap = new Map();
+
+navLinks.forEach((link) => {
+  const hash = link.getAttribute('href').split('#')[1];
+  if (hash) {
+    labelMap.set(hash, link.textContent.trim());
+  }
+});
+
+labelMap.set('skills-section', 'SKILLS');
+labelMap.set('projects-section', 'FEATURED');
+
+const updateCursorLabel = (label) => {
+  if (cursorText && label) {
+    cursorText.textContent = label;
+  }
+};
+
+const observedSections = Array.from(labelMap.keys())
+  .map((id) => document.getElementById(id))
+  .filter(Boolean);
+
+if (observedSections.length && cursorLabel) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const label = labelMap.get(entry.target.id);
+        if (label) {
+          updateCursorLabel(label);
+        }
+        cursorLabel.classList.toggle('is-inverted', entry.target.id === 'experience-section');
+      }
+    });
+  }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
+
+  observedSections.forEach((section) => sectionObserver.observe(section));
+}

@@ -45,6 +45,67 @@ body header {
   z-index: 2;
 }
 
+.cursor-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f7f9f2;
+  color: #0A0A0A;
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transform: translate3d(-9999px, -9999px, 0) scale(0.1);
+  opacity: 0;
+  transition: opacity 150ms ease, transform 200ms ease;
+  z-index: 3;
+}
+
+.cursor-label.is-active {
+  opacity: 1;
+}
+
+.cursor-label.is-hidden {
+  opacity: 0;
+}
+
+.cursor-label.is-inverted {
+  background: #0A0A0A;
+  color: #f7f9f2;
+  border: 2px solid #0A0A0A;
+}
+.cursor-label.is-inverted {
+  background: #0A0A0A;
+  color: #f7f9f2;
+  border: 2px solid #0A0A0A;
+}
+
+.cursor-label.is-idle {
+  transform: translate3d(var(--cursor-x, -9999px), var(--cursor-y, -9999px), 0) scale(0.1);
+}
+
+.cursor-label.is-idle span {
+  opacity: 0;
+}
+
+.cursor-label span {
+  transition: opacity 150ms ease;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-label {
+    display: none;
+  }
+}
+
 .button-container {
   display: flex;
   flex-direction: column;
@@ -1494,7 +1555,7 @@ footer>h5 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: 18px;
-    /* border-radius: 5px; */
+    border-radius: 15px;
     line-height: 22px;
     background-color: transparent;
     border: 1.5px solid #f7f9f2;
