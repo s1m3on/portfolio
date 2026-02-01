@@ -1312,7 +1312,8 @@ footer>h5 {
   .homecopy p {
     /* margin-top: 5px; */
     font-size: 20px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
+    padding: 15px 0 0 0;
   }
 
   #scroll-text {
@@ -1365,7 +1366,7 @@ footer>h5 {
   #about-section>div>p {
     /* text-align: center; */
     grid-column: 1/span 2;
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 90px;
   }
 
@@ -1523,10 +1524,10 @@ footer>h5 {
 
   .exp-grid-1 h2 {
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.2em;
     line-height: 0.9em;
     color: #0A0A0A;
-    -webkit-text-stroke: 3px #0A0A0A;
+    -webkit-text-stroke: 1.8px #0A0A0A;
   }
 
   .exp-grid-1 h3 {
