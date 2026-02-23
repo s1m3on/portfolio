@@ -33,84 +33,83 @@
   </head>
 
   <body>
-    <div class="button-container">
 
-      <a class="back-button" href="index.html" aria-label="Back to home">
-
-        <img src="./icons/arrow-right.svg" alt="Back" />
-
-      </a>
-
-    </div>
 <header class="header-section">
-      <a href="index.html"
+      <a href="#"
         ><img src="./img/logo/white.svg" class="logo" alt="simeon-iyoha-logo"
       /></a>
       <nav class="headernav">
-        <ul class="navlist" data-visible="false">
+       <ul class="navlist" data-visible="false">
           <li class="listItem"><a href="index.html#home-section">HOME</a></li>
-          <li class="listItem"><a href="index.html#about-section">ABOUT</a></li>
           <li class="listItem">
-            <a href="index.html#experience-section">HISTORY</a>
+            <a href="index.html#about-section">ABOUT</a>
+          </li>
+          <li class="listItem">
+            <a href="index.html#projects-section">WORK</a>
+          </li>
+          <li class="listItem">
+            <a href="index.html#experience-section">EXPERIENCE</a>
           </li>
           <li class="listItem">
             <a href="index.html#contact-section">CONTACT</a>
           </li>
         </ul>
-      <div class="header-icons">
-        <a
-          href="https://www.linkedin.com/in/simeon-iyoha-49990a145/"
-          target="new"
-          ><img
-            src="./icons/linked_in.svg"
-            class="linkedin-icon"
-            alt="linkedin-icon"
-        /></a>
-        <div class="blob white">
-          <a href="#spot">
-            <img
-              src="./icons/spotify_1.svg"
-              class="spotify-icon"
-              alt="spotify_icon"
-            />
+        <div class="header-icons">
+          <a
+            href="https://www.linkedin.com/in/simeon-iyoha-49990a145/"
+            target="new"
+            ><img
+              src="./icons/linked_in.svg"
+              class="linkedin-icon"
+              alt="linkedin-icon"
+          /></a>
+          <div class="blob white">
+            <a href="#spot">
+              <img
+                src="./icons/spotify_1.svg"
+                class="spotify-icon"
+                alt="spotify_icon"
+              />
+            </a>
+          </div>
+          <a class="navicon" aria-controls="navlist" href="#0"
+            ><img src="./icons/menu.svg" alt="navigation menu" />
           </a>
         </div>
-        <a class="navicon" aria-controls="navlist" href="#0"
-          ><img src="./icons/menu.svg" alt="navigation menu" />
-        </a>
-      </div>
       </nav>
     </header>
 
-  <div class="cursor-label" aria-hidden="true">
-    <span>HOME</span>
-  </div>
 
 <div id="home-section" class="arm-page">
       <section class="info-section">
-        <div class="info-text">
+        <div class="button-container">
+            <a class="back-button" href="index.html#projects-section" aria-label="Back to home">
+              <img src="./icons/arrow-left-circle.svg" alt="Back" />Back
+            </a>
+        </div>
+        <div class="info-text scroll-element js-scroll slide-bottom">
           <h3>Meritrade - NGX Trading Platform</h3>
           <p>
-            Meritrade is a digital trading platform designed around the Nigerian
-            Stock Exchange (NGX), enabling users to buy and sell stocks,
+            Meritrade is a digital trading platform designed to enable users buy and sell stocks,
             commodities, and bonds through a streamlined mobile experience.
             The platform integrates a secure digital wallet for funding and
             settlement, a comprehensive portfolio dashboard for monitoring
             investments, and market analysis tools that surface actionable
-            insights. Built on Meristem's long-standing credibility in financial
+            insights. <br><br>
+            Built on Meristem's long-standing credibility in financial
             services, Meritrade modernizes stock trading while preserving the
             trust expected from a well-established institution.
           </p>
         </div>
         <div class="parts parts-img-container">
-          <img src="./img/ARM-logo.png" class="parts-img" alt="" />
+          <img src="./img/meritade_img/onboard-1.png" class="parts-img" alt="" />
         </div>
       </section>
 
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>The Challenge</h3>
@@ -158,7 +157,7 @@
         </div>
 
 
-        <img src="./img/macbook.png" class="info-img" alt="" />
+        <img src="./img/meritade_img/old-page.png" class="info-img scroll-element js-scroll slide-bottom" alt="" />
 
 
       </section>
@@ -166,7 +165,7 @@
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>Project Goals</h3>
@@ -193,7 +192,7 @@
         - Increased trading frequency via timely, personalized engagement<br>
 
 
-        - Delivered an accessible experience for users aged 35-65<br><br>
+        - Delivered an accessible experience for users aged 27-65<br><br>
 
 
         The product needed to feel professional, dependable, and intuitive --
@@ -208,7 +207,7 @@
         </div>
 
 
-        <img src="./img/macbook.png" class="info-img" alt="" />
+        <img src="./img/meritade_img/all-imgs.png"" class="info-img scroll-element js-scroll slide-bottom" alt="" />
 
 
       </section>
@@ -216,7 +215,7 @@
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>UX Strategy &amp; Design Rationale</h3>
@@ -228,7 +227,7 @@
         1. Designing for Trust and Accessibility<br>
 
 
-        With a core demographic of users aged 35-65, accessibility was
+        With a core demographic of users aged 27-65, accessibility was
 
 
         foundational to every design decision. We focused on:<br><br>
@@ -275,6 +274,19 @@
 
         The result was a significantly faster time to first meaningful action.<br><br>
 
+                </p>
+
+
+        </div>
+
+          <img src="./img/meritade_img/phone-mock-1.png" class="info-img scroll-element js-scroll slide-bottom" alt="" />
+
+
+        <div class="info-text scroll-element js-scroll slide-bottom">
+
+        <h3></h3>
+
+        <p>
 
         3. Portfolio Dashboard as a Central Command Center<br>
 
@@ -324,61 +336,13 @@
         to inform, not overwhelm.<br><br>
 
 
-        5. Personalized Trade Recommendations &amp; Alerts<br>
-
-
-        User research identified a strong demand for proactive engagement. We
-
-
-        introduced:<br><br>
-
-
-        - Personalized trade suggestions based on user behavior<br>
-
-
-        - User-defined push notifications for price changes, market movements,
-
-
-        and reminders<br>
-
-
-        - Alerts aligned with individual portfolio interests<br><br>
-
-
-        This feature bridged the gap between passive monitoring and active
-
-
-        trading.<br><br>
-
-
-        6. Integrated Digital Wallet for Seamless Transactions<br>
-
-
-        Meritrade's built-in wallet enables users to:<br><br>
-
-
-        - Fund accounts securely<br>
-
-
-        - Execute trades without friction<br>
-
-
-        - Track transaction history transparently<br><br>
-
-
-        By eliminating external dependencies, the platform creates a cohesive
-
-
-        trading flow from funding to execution.
-
-
         </p>
 
 
         </div>
 
 
-        <img src="./img/macbook.png" class="info-img" alt="" />
+        <img src="./img/meritade_img/phone-mock-2.png" class="info-img scroll-element js-scroll slide-bottom" alt="" />
 
 
       </section>
@@ -386,7 +350,7 @@
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>Design Methodology</h3>
@@ -452,62 +416,17 @@
         </div>
 
 
-        <img src="./img/macbook.png" class="info-img" alt="" />
+        <img src="./img/meritade_img/phone-mock-3.png" class="info-img scroll-element js-scroll slide-bottom" alt="" />
 
 
       </section>
 
-      <section class="info-section">
 
-
-        <div class="info-text">
-
-
-        <h3>Solution</h3>
-
-
-        <p>
-
-
-        Meritrade delivers a refined trading experience through:<br><br>
-
-
-        - Intuitive NGX stock, bond, and commodity trading<br>
-
-
-        - Secure digital wallet integration<br>
-
-
-        - Clear, actionable portfolio dashboards<br>
-
-
-        - Simplified onboarding and account setup<br>
-
-
-        - Personalized trade recommendations and push notifications<br>
-
-
-        - Market trend analysis tailored to user interests<br><br>
-
-
-        The platform balances professional-grade capability with everyday usability.
-
-
-        </p>
-
-
-        </div>
-
-
-        <img src="./img/macbook.png" class="info-img" alt="" />
-
-
-      </section>
 
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>Impact</h3>
@@ -558,7 +477,7 @@
         </div>
 
 
-        <img src="./img/macbook.png" class="info-img" alt="" />
+        <!-- <img src="./img/meritade_img/all-imgs.png" class="info-img scroll-element js-scroll slide-bottom" alt="" /> -->
 
 
       </section>
@@ -566,7 +485,7 @@
       <section class="info-section">
 
 
-        <div class="info-text">
+        <div class="info-text scroll-element js-scroll slide-bottom">
 
 
         <h3>Conclusion</h3>
@@ -594,9 +513,6 @@
 
 
         </div>
-
-
-        <img src="./img/macbook.png" class="info-img" alt="" />
 
 
       </section>
