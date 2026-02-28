@@ -438,12 +438,21 @@ body {
 
 body header {
   display: flex;
-  padding: 0 100px;
+  padding: 12px 24px;
   position: fixed;
-  justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  gap: 20px;
+  width: min(1400px, calc(100vw - 200px));
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   box-sizing: border-box;
+  border-radius: 999px;
+  background: rgba(247, 249, 242, 0.08);
+  border: 1px solid rgba(247, 249, 242, 0.28);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 10;
 }
 
 p {
@@ -454,9 +463,11 @@ p {
 }
 
 .logo {
-  width: 80px;
-  height: 100%;
+  width: 30px;
+  height: 30px;
   display: block;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .spotify-icon {
@@ -466,21 +477,24 @@ p {
 
 .headernav {
   z-index: 2;
-  display: flex;
-  gap: 60px;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: 100%;
+  flex: 1;
 }
 
 .headernav img {
-  width: 100%;
+  width: auto;
   height: 22px;
 }
 
 .headernav .header-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  justify-self: end;
 }
 
 .headernav .header-icons .blob.white {
@@ -510,6 +524,7 @@ p {
 .navlist {
   display: flex;
   gap: 40px;
+  margin: 0 auto;
 }
 
 .navlist li a {
@@ -520,6 +535,14 @@ p {
 .navlist li a:hover {
   text-decoration: none;
   color: #f7f9f2;
+}
+
+.header-section.is-experience .navlist li a {
+  color: #0A0A0A;
+}
+
+.header-section.is-experience .navlist li a:hover {
+  color: #0A0A0A;
 }
 
 a.navicon {
@@ -1188,17 +1211,32 @@ footer>h5 {
 /*--------------------------------mobile only styles-----------------------------*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .logo {
-    width: 60px;
-    height: auto;
+    width: 26px;
+    height: 26px;
   }
 
   .header-section {
     position: fixed;
     display: flex;
-    padding: 0 30px;
-    justify-content: space-between;
+    padding: 10px 16px;
+    justify-content: flex-start;
     align-items: center;
-    /* position: relative; */
+    width: calc(100vw - 32px);
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: rgba(247, 249, 242, 0.08);
+    border: 1px solid rgba(247, 249, 242, 0.28);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .headernav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 100%;
   }
 
   /* side menu */
@@ -1251,6 +1289,11 @@ footer>h5 {
     cursor: pointer;
     width: 1.5rem;
     aspect-ratio: 1;
+  }
+
+  .headernav .header-icons {
+    gap: 16px;
+    justify-self: end;
   }
 
   #home-section {
@@ -1738,6 +1781,12 @@ footer>h5 {
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
+
+  .header-section {
+    width: calc(100vw - 200px);
+    top: 14px;
+    padding: 12px 20px;
+  }
 
   br {
     display: inline;

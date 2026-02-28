@@ -152,6 +152,19 @@ const updateCursorLabel = (label) => {
   }
 };
 
+const headerSection = document.querySelector('.header-section');
+const experienceSection = document.getElementById('experience-section');
+
+if (headerSection && experienceSection) {
+  const experienceObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      headerSection.classList.toggle('is-experience', entry.isIntersecting);
+    });
+  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+
+  experienceObserver.observe(experienceSection);
+}
+
 const observedSections = Array.from(labelMap.keys())
   .map((id) => document.getElementById(id))
   .filter(Boolean);
